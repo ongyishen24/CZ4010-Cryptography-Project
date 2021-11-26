@@ -22,7 +22,7 @@ RSA is open to attacks in the decryption key being used is sufficiently small, s
 
 The solution is by simply not using a small d.
 # Common Modulus
-This attack uses the modulus N as its weak spot. It requires two ciphertexts, both corresponding the same plaintext and N, but different encryption keys e1 and e2. The extended Euclidean algorithm will be performed on these two known encryption keys to extract two integers a1 and a2 so that e1a1+e2a2=1. The attacker will raise the messages to the power of a1 and a2 respectively. This results in M^(e1a1) mod N and M^(e2a2) mod N (either a1 and a2 will be negative, so the ciphertext with the negative a will be inversed mod N and then multiplied the absolute value of said a). Both of these values will be multiplied, and the result will be M mod N.
+This attack uses the modulus N as its weak spot. It requires two ciphertexts, both corresponding the same plaintext and N, but different encryption keys e1 and e2. The extended Euclidean algorithm will be performed on these two known encryption keys to extract two integers a1 and a2 so that e1a1+e2a2=1. The attacker will raise the messages to the power of a1 and a2 respectively. This results in M^(e1a1) mod N and M^(e2a2) mod N (either a1 and a2 will be negative, so the ciphertext with the negative a will be inversed mod N and then raised to the power of the absolute value of said a). Both of these values will be multiplied, and the result will be M mod N.
 
 This can be prevented by switching N's after every message.
 # Blinding signature
