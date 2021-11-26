@@ -5,7 +5,9 @@ as the CZ4010 second semester project. This project involves demonstrations
 of multiple potential attacks against the RSA cryptosystem.
 
 The project will demonstrate the following attacks:
-- Small exponent
-- Small D
+- Small encryption exponent
+- Small decryption exponent
 - Common Modulus
-- Blinding
+- Blinding signature
+
+
