@@ -10,7 +10,7 @@ The project will demonstrate the following attacks:
 - Common Modulus
 - Blinding signature
 
-The attacks on textbook RSA are done on python running in jupyter notebook
+The attacks on textbook RSA are done on python running in jupyter notebook. These codes will be functional using Python 3.8.0 and newer.
 
 # Small encryption exponent
 
