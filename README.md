@@ -22,7 +22,7 @@ The attacks on textbook RSA are done on python running in jupyter notebook
 
 # Issues faced
 Working with large numbers meant that trying to obtain the cube root would result in overflow errors<br>
-We implemented a function that takes advantage of the decimal module's high precision to compute 1/3<br>
+We implemented a function that takes advantage of the decimal module's high precision to compute 1/3 to a minimum of 27 digits (Going higher for larger numbers)<br>
 To get the cube root of a large number, we would raise that number to the power of the high precision decimal form of 1/3 and round it
 
 # Conclusion
